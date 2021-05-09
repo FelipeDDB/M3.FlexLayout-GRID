@@ -1,0 +1,231 @@
+/* Organizamos toda la página como Flexbox con secciones en vertical */
+body {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Cabecera con dos subsecciones en vertical */
+header {
+    width: 80%;
+    flex-basis: 20px;
+    margin: 5px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-div1 {
+    width: 97.5%;
+    flex-basis: 20px;
+    margin: 5px;
+    margin-top: 10px;
+    background: #2d4059;
+    display: flex;
+    justify-content: center;
+
+}
+.header-div1 div {
+    background: #ea5455;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header-div1-1 {
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.header-div1-2 {
+    width: 70%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header-div1-3 {
+    width: 15%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.header-div2 {
+    width: 97.5%;
+    flex-basis: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background: #f07b3f;
+    display: flex;
+    justify-content: center;
+}
+.header-div2 div {
+    width: 97.5%;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fed460;
+}
+
+/* Espacio central de la página */
+article {
+    width: 80%;
+    margin: 5px;
+    background: black;
+    display: flex;
+    align-items: stretch;
+    flex-basis: 20px;
+}
+.article-div1 {
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #4e4e6a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.article-div1 div {
+    width: 47%;
+    height: 10px;
+    margin: 5px;
+    background: #1f6cb0;
+}
+#divbottom {
+    background: #70a3c4;
+    flex-grow: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.article-div2 {
+    width: 30%;
+    padding-top: 5px;
+    margin: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #f73f52;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.article-div2 div {
+    height: 10px;
+    width: 90%;
+    margin: 5px 0;
+    background: #feea85;
+}
+
+/* Estilos del pie de página */
+footer {
+    width: 80%;
+    margin: 5px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    flex-basis: 20px;
+}
+footer div {
+    width: 97.5%;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #e6af26;
+}
+
+/* Adaptación Responsive según medida de pantalla */ 
+@media (max-width: 700px) {
+    article {
+        background: yellow;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article-div1 {
+        width: 97.5%;
+        margin: 5px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .article-div2 {
+        width: 97.5%;
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    .article-div1 div {
+        width: 97.5%;
+    }
+    .article-div2 div {
+        width: 97.5%;
+    }
+    #divbottom {
+        margin: 5px;
+    }
+
+}
+
+/*------------------------------
+.header-div2 {
+    width: 97.5%;
+    flex-basis: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background: #f07b3f;
+    display: flex;
+    justify-content: center;
+}
+.header-div2 div {
+    width: 97.5%;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fed460;
+}
+--------------------------------*/
+
+
+
+/* Adaptación Responsive según medida de pantalla */ 
+@media (max-width: 450px) {
+    .header-div1 {
+        background: grey;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-div1 div {
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header-div2 div {
+        width: 95%;
+    }
+    article {
+        background: gold;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-div1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article-div1,
+    .article-div2 {
+        width: 95%;
+    }
+    .article-div1 div {
+        width: 90%;
+    }
+    .article-div2 div {
+        width: 90%;
+    }
+    #divbottom {
+        flex-grow: 0;
+    }
+}
